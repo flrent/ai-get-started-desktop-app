@@ -1,0 +1,38 @@
+{
+  "name": "ai-desktop-app",
+  "productName": "ai-desktop-app",
+  "version": "1.0.0",
+  "description": "Get started building a private AI-powered desktop app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "flrent",
+  "license": "MIT",
+  "dependencies": {
+    "@opendocsg/pdf2md": "^0.1.28",
+    "@orama/orama": "^2.0.7",
+    "@xenova/transformers": "^2.6.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "langchain": "^0.0.170",
+    "mammoth": "^1.6.0",
+    "odt2html": "^1.0.1",
+    "ollama": "^0.4.9",
+    "sharp": "^0.33.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.1.1",
+    "tailwind": "^4.0.0"
+  }
+}

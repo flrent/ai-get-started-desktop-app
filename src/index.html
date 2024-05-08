@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>AI-powered desktop app</title>
+
+	<script type="module" src="./client.js" defer></script>
+	<link href="./css/index.css" rel="stylesheet" />
+	
+</head>
+
+<body>
+	<!-- Initial Loading View -->
+	<div id="initial-view">
+		<img id="app-logo" src="../public/default.jpg" alt="Foggy Sunset from Corona Heights. Photo: John Leszczynski, Flickr. Creative Commons" />
+		<div id="spinner"></div>
+		<div id="status-msg"></div>
+	</div>
+
+	<!-- Chat View (Initially Hidden) -->
+	<div id="chat-view">
+
+		<!-- Chat Container -->
+		<div class="chat" class="w-xlarge">
+
+			<h1 class="text-center text-3xl">Get started building a private AI-powered desktop app</h1>
+			<p class="mt-20">You can use a local and private model to interact with your file system.</p>
+			<p class="mt-5">The inference runs locally with a self-contained Ollama, and you can use any model.</p>
+			<p class="mt-5">This allows you to send prompts to various LLMs to augment what a desktop application can do.</p>
+			<h3 class="text-2xl mt-10">Example: </h3>
+			<div class="grid grid-cols-2 gap-4">
+				<div class="p-4">
+					<img src="../public/default.jpg" alt="Foggy Sunset from Corona Heights. Photo: John Leszczynski, Flickr. Creative Commons" width="400">
+				</div>
+				<div class="p-4">
+					<div id="history">
+						<div class="history-chat-message break-words">
+							Prompt: "Suggest a funny file name, and a generic file name for this photo."
+						</div>
+						<div class="mt-10 history-chat-response break-words align-left"><div class="loading">Loading...</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
